@@ -1,0 +1,37 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.main-header {
+    text-align: right;
+    border: 1px solid;
+}
+
+.main-nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    vertical-align: middle;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.brand-logo {
+    display: inline-block;
+    border: 1px solid;
+    vertical-align: middle;
+}
