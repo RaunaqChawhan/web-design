@@ -8,30 +8,59 @@ html, body {
     box-sizing: inherit;
 }
 
-.main-header {
-    text-align: right;
+.main-header, .main-nav, .main-nav__item {
     border: 1px solid;
+}
+
+.main-header {
+    /*width: 722px;*/
+    height: 100px;
+/*    transform: translateX(-100vw);*/
+    transform-origin: top right;
+/*    transform: translateX(-99vw) rotate(-90deg);*/
+/*    position: absolute;*/
+    transform: rotate(-90deg);
+}
+
+.brand-logo {
+    display: inline-block;
+    width: 34px;
+    border: 1px solid;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 900px;
+    transform: 
 }
 
 .main-nav {
     display: inline-block;
     vertical-align: middle;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 700px;
 }
 
 .main-nav__items {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1px solid;
     vertical-align: middle;
 }
 
 .main-nav__item {
     display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+    vertical-align: middle;
 }
 
-.brand-logo {
-    display: inline-block;
-    border: 1px solid;
-    vertical-align: middle;
+.main-nav__item a {
+    text-decoration: none;
+}
+
+main, footer {
+    margin-left: 100px;
 }
