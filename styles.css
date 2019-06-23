@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     height: 100%;
+    font-family: 'Roboto Slab', serif;
 }
 
 * {
@@ -13,33 +14,27 @@ html, body {
 /*    border: 1px solid;*/
 }
 
+
+/********
+Header
+*******/
 .main-header {
     width: 100vh;
-    
-/*    transform: translateX(-100vw);*/
     transform-origin: top left;
-/*    transform: translateX(-99vw) rotate(-90deg);*/
-    position: fixed;
+    position: absolute;
     left: 100px;
     top: 0;
     transform: rotate(90deg);
-/*    background: blue;*/
 }
 
 .brand-logo {
     display: inline-block;
     width: 34px;
-/*    border: 1px solid;*/
     vertical-align: middle;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 30px;
     transform: rotate(-90deg);
-/*
-    position: relative;
-    left: 900px;
-    transform: 
-*/
 }
 
 .main-nav {
@@ -49,10 +44,6 @@ html, body {
     margin-bottom: 30px;
     margin-left: 130px;
     transform: rotate(180deg);
-/*
-    position: relative;
-    left: 700px;
-*/
 }
 
 .main-nav__items {
@@ -73,11 +64,34 @@ html, body {
     text-decoration: none;
 }
 
-.main-nav__items .active {
-    border-top: 3px solid;
+.main-nav__item.active::before {
+/*
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 405px;
+    border: 2px solid blue;
+    width: 50px;
+*/
 }
 
 main, footer {
     margin-left: 100px;
     border-left: 1px solid;
+}
+
+/************
+Top section
+************/
+
+.top-section__left {
+    background-image: url('beach-boat-bridge-326840.jpg');
+    background-size: cover;
+    width: 60vw;
+    height: 80vh;
+}
+
+.top-section__left p {
+    margin: 0;
 }
