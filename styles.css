@@ -210,3 +210,18 @@ Top section
     color: #bfbfbf;
     margin-top: 0.5rem;
 }
+
+/**************
+Middle section
+***************/
+#middle-section {
+    margin-top: 10vh;
+    height: 90vh;
+    border: 1px solid;
+}
+
+.middle-left__items {
+    margin-left: 25vw;
+    width: 26vw;
+    border: 1px solid;
+}
