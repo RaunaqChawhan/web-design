@@ -137,8 +137,29 @@ Top section
 }
 
 .top-section__right {
-    width: 30vw;
-    display: inline-block;
+    width: 31vw;
+    height: 90vh;
+    display: inline-flex;
     vertical-align: middle;
     border: 1px solid;
+    margin: 0;
+    align-items: center;
+}
+
+.right-places {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5rem;
+    height: 85vh;
+    text-align: justify;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
