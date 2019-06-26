@@ -312,3 +312,27 @@ Middle section
     z-index: -1;
     background-color: rgba(191, 191, 191, 0.2);
 }
+
+/**************
+Bottom section
+**************/
+#bottom-section {
+    border: 1px solid;
+    height: 100vh;
+}
+
+.bottom-section__quote {
+    border-left: 5px solid #c0392b;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    display: inline-block;
+    max-width: 58vw;
+    margin-top: 0;
+    margin-left: 12%;
+    padding: 15px;
+}
+
+.bottom-section__quote:before, .bottom-section__quote:after {
+    content: "\0022";
+}
