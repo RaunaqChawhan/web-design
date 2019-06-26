@@ -215,13 +215,95 @@ Top section
 Middle section
 ***************/
 #middle-section {
-    margin-top: 10vh;
-    height: 90vh;
+    padding-top: 10vh;
+    height: 100vh;
     border: 1px solid;
 }
 
 .middle-left__items {
-    margin-left: 25vw;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20vw;
+    width: 26.5vw;
+    border: 1px solid;
+}
+
+.middle-left__items .middle-left__date {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.7rem;
+    color: #bfbfbf;
+}
+
+.middle-left__items .middle-left__heading {
+    margin-top: 0.4rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.middle-left__quote, .middle-left__description, .middle-left__footer, .middle-left__conclusion {
+    font-size: 0.85rem;
+    text-align: left;
+    line-height: 25px;
+    color: #6c7a89;
+}
+
+.middle-left__description, .middle-left__footer, .middle-left__conclusion {
+    margin-top: 1.8rem;
+}
+
+.middle-left__description {
+    border: 1px solid;
+    width: 28vw;
+}
+
+.middle-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 6rem;
     width: 26vw;
     border: 1px solid;
+    position: relative;
+}
+
+.right-heading {
+    border: 1px solid;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -6.9rem;
+    top: 5.5rem;
+}
+
+.right-heading span {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.right-heading span:nth-child(2) {
+    font-style: italic;
+    font-size: 0.7rem;
+    color: #bfbfbf;
+}
+
+.right-heading span:nth-child(1) {
+    font-weight: 700;
+    font-size: 0.8rem;
+/*    color: #bfbfbf;*/
+}
+
+.middle-right img {
+    width: 18rem;
+    height: 18.5rem;
+}
+
+.box {
+    width: 42.4rem;
+    height: 20rem;
+    background-color: grey;
+    position: absolute;
+    top: 100px;
+    right: -158px;
+    z-index: -1;
+    background-color: rgba(191, 191, 191, 0.2);
 }
