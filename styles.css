@@ -336,3 +336,144 @@ Bottom section
 .bottom-section__quote:before, .bottom-section__quote:after {
     content: "\0022";
 }
+
+/***********
+Curved text
+***********/
+#curved-text {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+#curved-text span {
+    position: absolute;
+    top: 0;
+    width: 16px;
+    left: 50%;
+    margin-left: -8px;
+    border: 1px solid;
+    height: 100px;
+    text-align: center;
+    transform-origin: bottom center;
+    line-height: -180px;
+}
+
+#curved-text span:nth-of-type(1) {
+    transform: rotate(-90deg);
+}
+
+#curved-text span:nth-of-type(2) {
+    transform: rotate(-81deg);
+}
+
+#curved-text span:nth-of-type(3) {
+    transform: rotate(-72deg);
+}
+
+#curved-text span:nth-of-type(4) {
+    transform: rotate(-63deg);
+}
+
+#curved-text span:nth-of-type(5) {
+    transform: rotate(-54deg);
+}
+
+#curved-text span:nth-of-type(6) {
+    transform: rotate(-45deg);
+}
+
+#curved-text span:nth-of-type(7) {
+    transform: rotate(-36deg);
+}
+
+#curved-text span:nth-of-type(8) {
+    transform: rotate(-27deg);
+}
+
+#curved-text span:nth-of-type(9) {
+    transform: rotate(-18deg);
+}
+
+#curved-text span:nth-of-type(10) {
+    transform: rotate(-9deg);
+}
+
+#curved-text span:nth-of-type(11) {
+    transform: rotate(0deg);
+}
+
+#curved-text span:nth-of-type(12) {
+    transform: rotate(9deg);
+}
+
+#curved-text span:nth-of-type(13) {
+    transform: rotate(18deg);
+}
+
+#curved-text span:nth-of-type(14) {
+    transform: rotate(27deg);
+}
+
+#curved-text span:nth-of-type(15) {
+    transform: rotate(36deg);
+}
+
+#curved-text span:nth-of-type(16) {
+    transform: rotate(45deg);
+}
+
+#curved-text span:nth-of-type(17) {
+    transform: rotate(54deg);
+}
+
+#curved-text span:nth-of-type(18) {
+    transform: rotate(63deg);
+}
+
+#curved-text span:nth-of-type(19) {
+    transform: rotate(72deg);
+}
+
+#curved-text span:nth-of-type(20) {
+    transform: rotate(81deg);
+}
+
+#curved-text span:nth-of-type(21) {
+    transform: rotate(90deg);
+}
+
+#curved-text span:nth-of-type(22) {
+    transform: rotate(99deg);
+}
+
+#curved-text span:nth-of-type(23) {
+    transform: rotate(108deg);
+}
+
+#curved-text span:nth-of-type(24) {
+    transform: rotate(117deg);
+}
+
+#curved-text span:nth-of-type(25) {
+    transform: rotate(126deg);
+}
+
+#curved-text span:nth-of-type(26) {
+    transform: rotate(135deg);
+}
+
+#curved-text span:nth-of-type(27) {
+    transform: rotate(144deg);
+}
+
+#curved-text span:nth-of-type(28) {
+    transform: rotate(153deg);
+}
+
+#curved-text span:nth-of-type(29) {
+    transform: rotate(162deg);
+}
