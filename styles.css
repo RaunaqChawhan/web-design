@@ -343,8 +343,10 @@ Curved text
 #curved-text {
     width: 200px;
     height: 200px;
-    border: 1px solid;
+/*    border: 1px solid;*/
     position: relative;
+    top: 1rem;
+    left: 44rem;
     font-size: 20px;
     font-family: 'Oxygen Mono', monospace;
 }
@@ -355,12 +357,13 @@ Curved text
     width: 16px;
     left: 50%;
     margin-left: -8px;
-    border: 1px solid;
+/*    border: 1px solid;*/
     height: 100px;
     text-align: center;
     transform-origin: bottom center;
-    line-height: -180px;
+/*    line-height: 180px;*/
 }
+
 
 #curved-text span:nth-of-type(1) {
     transform: rotate(-90deg);
@@ -476,4 +479,19 @@ Curved text
 
 #curved-text span:nth-of-type(29) {
     transform: rotate(162deg);
+}
+
+.fa-bolt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #c0392b;
+}
+
+#bottom-section img {
+    width: 58vw;
+    height: 61vh;
+    position: relative;
+    top: -4rem;
 }
