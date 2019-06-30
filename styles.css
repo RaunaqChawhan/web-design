@@ -19,7 +19,8 @@ html, body {
 Header
 *******/
 .main-header {
-    width: 100vh;
+/*    border: 1px solid;*/
+    width: 700px;
     transform-origin: top left;
     position: absolute;
     left: 100px;
@@ -65,16 +66,17 @@ Header
     color: #000;
 }
 
-.main-nav__item.active::before {
-/*
+.main-nav__item.active:before {
     content: "";
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    left: 405px;
-    border: 2px solid blue;
-    width: 50px;
-*/
+    display: block;
+    position: relative;
+/*    margin: 0 auto;*/
+    top: -35px;
+/*    left: -10px;*/
+    border-top: 4px solid #c0392b;
+/*    padding-top: 30px;*/
+/*    transform: rotate(-90deg);*/
+/*    width: 40px;*/
 }
 
 main, footer {
@@ -217,7 +219,7 @@ Middle section
 #middle-section {
     padding-top: 10vh;
     height: 100vh;
-/*    border: 1px solid;*/
+    border-left: 1px solid #bfbfbf;
 }
 
 .middle-left__items {
@@ -317,7 +319,7 @@ Middle section
 Bottom section
 **************/
 #bottom-section {
-/*    border: 1px solid;*/
+    border-left: 1px solid #bfbfbf;
     height: 100vh;
     position: relative;
 }
@@ -332,6 +334,7 @@ Bottom section
     margin-top: 0;
     margin-left: 12%;
     padding: 15px;
+    color: #6c7a89;
 }
 
 .bottom-section__quote:before, .bottom-section__quote:after {
@@ -350,6 +353,7 @@ Curved text
     left: 44rem;
     font-size: 20px;
     font-family: 'Oxygen Mono', monospace;
+    color: #6c7a89;
 }
 
 #curved-text span {
@@ -570,21 +574,45 @@ Curved text
 Footer
 ******/
 .main-footer {
-    padding-top: 50px;
-    border: 1px solid;
-    height: 150px;
+    padding-top: 80px;
+    border-left: 1px solid #bfbfbf;
+    position: relative;
+    height: 200px;
 }
 
 .footer-navigation {
-    border: 1px solid;
-    display: flex;
-    justify-content: flex-end;
-    
+/*    border: 1px solid;*/
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    width: 44vw;
+/*    padding: 10px;*/
 }
 
 .footer-links {
     list-style-type: none;
     margin: 0;
+    margin-right: 70px;
     padding: 0;
-    border: 1px solid;
+/*    border: 1px solid;*/
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.8rem;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links li:nth-child(1) span {
+    position: relative;
+    left: -12px;
+    font-weight: 700;
+}
+
+.footer-links li .fa-map-marker-alt {
+    position: relative;
+    left: -40px;
+    color: #c0392b;
 }
