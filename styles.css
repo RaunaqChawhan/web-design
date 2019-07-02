@@ -2,7 +2,7 @@ html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: 100%;
+/*    height: 100%;*/
     font-family: 'Roboto Slab', serif;
 }
 
@@ -223,7 +223,7 @@ Middle section
 ***************/
 #middle-section {
     padding-top: 10vh;
-    height: 100vh;
+/*    height: 100vh;*/
     border-left: 1px solid #bfbfbf;
 }
 
@@ -325,7 +325,7 @@ Bottom section
 **************/
 #bottom-section {
     border-left: 1px solid #bfbfbf;
-    height: 100vh;
+/*    height: 100vh;*/
     position: relative;
 }
 
@@ -625,9 +625,10 @@ Footer
 /**************
 Media queries
 **************/
+/*
 @media (min-width: 1200px) {
     header, main, footer {
         max-width: 1200px;
         margin: 0 auto;
     }
-}
+}*/
