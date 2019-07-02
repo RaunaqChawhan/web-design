@@ -625,3 +625,9 @@ Footer
 /**************
 Media queries
 **************/
+@media (min-width: 1200px) {
+    header, main, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
