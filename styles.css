@@ -333,7 +333,6 @@ Bottom section
     font-size: 1.6rem;
     font-style: italic;
     font-weight: 300;
-    display: inline-block;
     max-width: 58vw;
     margin-top: 0;
     margin-left: 12%;
@@ -639,11 +638,9 @@ Media queries
 
 @media (max-width: 800px) {
     
-/*
     body {
         overflow-x: hidden;
     }
-*/
     
     /******
     Header
@@ -841,9 +838,64 @@ Media queries
     
     .bottom-section__quote {
         font-size: 1.8rem;
-        font-weight: 300;
-        max-width: 65vw;
+        max-width: 80vw;
         margin: 0 auto;
     }
     
+    #curved-text {
+        margin: 2rem auto;
+        position: static;
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+/*        font-family: 'Roboto Slab', serif;*/
+    }
+    
+    #curved-text > span[class*="letter"] {
+        position: static;
+        transform: none;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    #curved-text .fa-bolt {
+        display: block;
+        position: static;
+        transform: none;
+        margin: 1rem auto;
+    }
+    
+    #bottom-section img {
+        position: static;
+        max-width: 100%;
+    }
+    
+    .bottom-section__card {
+        display: block;
+        text-align: center;
+        position: static;
+        margin: 0 auto;
+    }
+    
+    .card {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .card-description {
+        width: 100%;
+    }
+    
+    .navigation-arrows {
+        margin-top: 1rem;
+    }
+    
+    .footer-navigation {
+/*        border: 1px solid;*/
+        position: static;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
