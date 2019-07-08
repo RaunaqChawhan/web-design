@@ -336,7 +336,7 @@ Bottom section
     max-width: 58vw;
     margin-top: 0;
     margin-left: 12%;
-    padding: 15px;
+    padding: 10px;
     color: #6c7a89;
 }
 
@@ -591,17 +591,18 @@ Footer
 .main-footer {
     padding-top: 80px;
     border-left: 1px solid #bfbfbf;
+/*    border: 1px solid;*/
     position: relative;
-    height: 200px;
+/*    height: 200px;*/
 }
 
 .footer-navigation {
-/*    border: 1px solid;*/
+/*    border: 2px solid;*/
     display: inline-block;
     vertical-align: top;
     position: absolute;
     right: 0;
-    width: 44vw;
+/*    width: 44vw;*/
 /*    padding: 10px;*/
 }
 
