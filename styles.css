@@ -727,11 +727,11 @@ Media queries
     *****************/
     
     .top-section__right {
-        width: auto;
+        width: 96%;
         height: 250px;
         display: flex;
 /*        border: 1px solid;*/
-        margin: 0;
+        margin: 0 auto;
         align-items: center;
 }
 
@@ -874,9 +874,9 @@ Media queries
     
     .bottom-section__card {
         display: block;
+        width: 100%;
         text-align: center;
         position: static;
-        margin: 0 auto;
     }
     
     .card {
@@ -892,12 +892,25 @@ Media queries
         margin-top: 1rem;
     }
     
+    .main-footer {
+        padding-top: 20px;
+    }
+    
     .footer-navigation {
 /*        border: 1px solid;*/
         position: static;
         display: block;
         width: 80%;
         margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-links {
+        font-size: initial;
+    }
+    
+    .footer-links:nth-of-type(3) {
+        margin-right: 0;
     }
     
     .middle-section, .bottom-section, .main-footer {
