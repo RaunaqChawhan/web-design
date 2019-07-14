@@ -94,14 +94,15 @@ Top section
     background-image: url('beach-boat-bridge-326840.jpg');
     background-size: cover;
 /*    max-width: 60vw;*/
-    width: 60vw;
+    width: 60%;
     height: 90vh;
+    position: relative;
 }
 
 .left-text {
     position: absolute;
-    left: 8rem;
-    bottom: 8rem;
+    left: 5%;
+    bottom: 12%;
     color: #FFF;
 }
 
@@ -115,14 +116,16 @@ Top section
 .left-text h1 {
     font-size: 3rem;
     margin: 10px auto;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .left-text h1::after {
     content: "";
     display: block;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    bottom: 1.8rem;
+    bottom: 0;
 /*    width: 105%;*/
     left: -0.55rem;
     width: 16.5rem;
@@ -143,19 +146,19 @@ Top section
 }
 
 .top-section__right {
-    width: 31vw;
+    width: 32%;
     height: 90vh;
     display: inline-flex;
     vertical-align: middle;
 /*    border: 1px solid;*/
-    margin: 0;
+    margin: 0 3%;
     align-items: center;
 }
 
 .right-places {
     list-style-type: none;
     padding: 0;
-    margin: 0 6rem;
+    margin: 0 10%;
     height: 85vh;
     text-align: justify;
 /*    border: 1px solid;*/
@@ -172,7 +175,7 @@ Top section
 }
 
 .right-place__heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     display: inline-block;
     vertical-align: middle;
@@ -181,7 +184,7 @@ Top section
 .right-place .fa-shuttle-van, .right-place .fa-plane, .right-place .fa-umbrella-beach {
     color: #c0392b;
     vertical-align: middle;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .right-place .fa-plane {
@@ -193,7 +196,8 @@ Top section
 }
 
 .right-place__description {
-    font-size: 0.85rem;
+    font-size: 1rem;
+    width: 100%;
     color: #6c7a89;
 }
 
@@ -204,11 +208,11 @@ Top section
     top: 0.7rem;
     width: 98%;
     margin: 0 auto;
-    border-bottom: 1px solid #bfbfbf;
+    border-bottom: 2px solid #bfbfbf;
 }
 
 .right-place__location, .right-place__date {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-style: italic;
     color: #bfbfbf;
     margin-top: 0.5rem;
@@ -637,13 +641,11 @@ Footer
 Media queries
 **************/
 
-@media (max-width: 800px) {
+@media (max-width: 1100px), (min-width: 1600px) {
     
-/*
     body, header, main, footer {
         overflow-x: hidden;
     }
-*/
     
     /******
     Header
@@ -660,10 +662,13 @@ Media queries
     
     .brand-logo {
         transform: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 25px;
     }
     
     .main-nav {
-        margin-left: 60px;
+        margin-left: 15%;
         transform: none;
 /*        border: 1px solid;*/
     }
@@ -713,8 +718,7 @@ Media queries
     }
 
     .left-text h1::after {
-        bottom: 2.3rem;
-        width: 22rem;
+        width: 21.6rem;
     }
 
     .social-icons {
@@ -776,8 +780,8 @@ Media queries
     Middle section
     ***************/
     
-    .middle-section {
-        padding-top: auto;
+    #middle-section {
+        padding-top: 30px;
     }
 
     .middle-left__items {
@@ -849,8 +853,8 @@ Media queries
     #curved-text {
         margin: 2rem auto;
         position: static;
-        width: 100vw;
-        height: 50px;
+        width: 90vw;
+        height: initial;
         text-align: center;
 /*        font-family: 'Roboto Slab', serif;*/
     }
@@ -921,7 +925,7 @@ Media queries
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 740px), (min-width: 1600px) {
     
     .main-nav__item {
         display: none;
@@ -943,8 +947,9 @@ Media queries
         width: 40px;
         height: 6px;
         position: absolute;
-        right: 5%;
-        top: 62px;
+        right: 0;
+        top: 42px;
+        margin-right: 25px;
         cursor: pointer;
     }
 
@@ -976,6 +981,12 @@ Media queries
     
     .middle-left__items {
         width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .middle-left__description, .middle-left__footer {
+        width: 100%;
     }
     
     .middle-right {
@@ -993,14 +1004,104 @@ Media queries
     
 }
 
-@media (max-width: 550px) {
+@media (max-width: 550px), (min-width: 1600px) {
     
     .top-section__left {
-        height: 40vh;
+/*        height: 40vh;*/
     }
     
     .top-section__right {
         width: 100%;
-        height: 80vh;
+        height: initial;
     }
+    
+    .right-places {
+        flex-direction: column;
+        height: 80%;
+        padding: 0 20px;
+    }
+    
+    .right-place {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .right-places li:nth-child(1) {
+        margin-top: 30px;
+    }
+    
+    .right-place__description {
+        width: 100%;
+    }
+    
+    .footer-links {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    
+    .card-heading {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    
+ /*   .main-header {
+        height: 300px;
+        left: 200px;
+        width: 100%;
+    }
+
+    .main-nav {
+        font-size: 3rem;
+        margin-left: 40%;
+        transform: none;
+    }
+
+    .brand-logo {
+        transform: none;
+        font-size: 10rem;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+*/
+
+    
+
+    .top-section__left {
+        position: relative;
+        height: 80vh;
+        vertical-align: top;
+    }
+    
+    .top-section__right {
+        height: 80vh;
+        vertical-align: top;
+    }
+    
+    .right-places {
+        height: 75vh;
+        margin: 0 20%;
+    }
+    
+    .right-places, .right-place__heading {
+        font-size: 2rem;
+    }
+    
+    .right-place__description {
+        font-size: 1.4rem;
+    }
+    
+    .right-place__description::after {
+        border-bottom: 3px solid #bfbfbf;
+    }
+    
+    .right-place__location, .right-place__date {
+        font-size: 1.2rem;
+    }
+
 }
