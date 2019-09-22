@@ -91,7 +91,7 @@ Top section
 .top-section__left {
     display: inline-block;
     vertical-align: middle;
-    background-image: url('beach-boat-bridge-326840.jpg');
+    background-image: url('img/original/beach-boat-bridge.jpg');
     background-size: cover;
 /*    max-width: 60vw;*/
     width: 60%;
@@ -694,7 +694,7 @@ Media queries
 
     .top-section__left {
         display: block;
-        background-image: url('beach-boat-bridge-326840.jpg');
+        background-image: url('img/original/beach-boat-bridge.jpg');
         background-size: cover;
         width: 100%;
         height: 60vh;
