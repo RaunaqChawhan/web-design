@@ -638,7 +638,7 @@ Footer
 }
 
 .bottom-section__img.lazy, .middle-section__img.lazy {
-    filter: blur(8px);
+    filter: blur(5px);
 }
 
 /**************
