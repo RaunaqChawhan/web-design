@@ -6,5 +6,14 @@ mobileNavigation.addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    var lazyImages = document.querySelectorAll('img.lazy')
+    var lazyLoadThrottleTimeout;
     
-})
+    function lazyLoad() {
+        
+    }
+    
+    document.addEventListener('scroll', lazyLoad);
+    window.addEventListener('resize', lazyLoad);
+    window.addEventListener('orientationchange', lazyLoad);
+});
