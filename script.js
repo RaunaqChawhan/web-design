@@ -10,7 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var lazyLoadThrottleTimeout;
     
     function lazyLoad() {
+        if(lazyLoadThrottleTimeout) {
+            clearTimeout(lazyLoadThrottleTimeout)
+        }
         
+        lazyLoadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+            lazyImages.forEach(function(img) {
+                if(img.)
+            })
+        }, 20);
     }
     
     document.addEventListener('scroll', lazyLoad);
