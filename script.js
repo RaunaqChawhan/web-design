@@ -17,8 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
         lazyLoadThrottleTimeout = setTimeout(function() {
             var scrollTop = window.pageYOffset;
             lazyImages.forEach(function(img) {
-                if(img.)
-            })
+                var offsetTop = 0, tempElement = img;
+                while(tempElement) {
+                    offsetTop += tempElement.offsetTop;
+                    tempElement = tempElement.offsetParent;
+                }
+                console.log(offsetTop);
+                if(offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                }
+            });
+            if(lazyImages.length === 0) {
+                document.removeEventListener('scroll', lazyLoad);
+                document.removeEventListener('resize', lazyLoad);
+                document.removeEventListener('orientationchange', lazyLoad);
+            }
         }, 20);
     }
     
