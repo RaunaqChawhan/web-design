@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     tempElement = tempElement.offsetParent;
                 }
                 console.log(offsetTop);
-                if(offsetTop < (window.innerHeight + scrollTop)) {
+                if(offsetTop < (window.innerHeight + scrollTop + 500)) {
                     img.src = img.dataset.src;
                     img.classList.remove('lazy');
                 }
